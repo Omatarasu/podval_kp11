@@ -18,9 +18,11 @@ no shutdown
 interface fa0/1
 switchport mode access 
 switchport access vlan 10
+no shutdown
 interface fa0/2
 switchport mode access 
 switchport access vlan 20
+no shutdown
 ```
 > раскидывание интерфейсов по vlan 
 
@@ -42,8 +44,10 @@ no shutdown
 interface fa0/1
 switchport mode access 
 switchport access vlan 20
+no shutdown
 interface fa0/2
 switchport mode access 
 switchport access vlan 10
+no shutdown
 ```
 > раскидывание интерфейсов по vlan 
