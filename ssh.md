@@ -3,8 +3,10 @@
 # Cisco ssh configuration
 
 ```
-hostname R1
+hostname R1  
 ```
+> как бы по логике должен быть SW1, но мне лень править
+
 > задаем hostname
 ```
 ip domain-name podval.kp11
