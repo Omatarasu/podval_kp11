@@ -17,12 +17,12 @@ description WAN
 
 ### OSPF
 ```
-router ospf 10
-router-id 1.1.1.1 (identify in ospf network)
+router ospf 10 (ID ospf process)
+router-id 1.1.1.1 (ID in ospf network)
 ip ospf priority 255 (0-255, 0 - loser, 255 - DR)
 passive-interface Gi0/0/0 (will not send hello packets)
 network 212.12.12.0 0.0.0.3 area 0 (announcing WAN)
-network 192.168.10.0 0.0.0.255 (announcing LAN)
+network 192.168.10.0 0.0.0.255 area 0 (announcing LAN)
 ip ospf hello-interval 5 (same on all routers)
 ip ospf dead-interval 20 (saame on all routers)
 ```
@@ -47,12 +47,12 @@ description WAN
 
 ### OSPF
 ```
-router ospf 10
-router-id 2.2.2.2 (identify in ospf network)
+router ospf 10 (ID ospf process)
+router-id 2.2.2.2 (ID in ospf network)
 ip ospf priority 0 (0-255, 0 - loser, 255 - DR)
 passive-interface Gi0/0/0 (will not send hello packets)
 network 212.12.12.0 0.0.0.3 area 0 (announcing WAN)
-network 192.168.20.0 0.0.0.255 (announcing LAN)
+network 192.168.20.0 0.0.0.255 area 0(announcing LAN)
 ip ospf hello-interval 5 (same on all routers)
 ip ospf dead-interval 20 (saame on all routers)
 ```
