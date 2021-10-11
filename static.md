@@ -27,11 +27,20 @@ ip route 192.168.20.0 255.255.255.0 (remote network) Gi0/0/1 (outgoing interface
 ```
 > Directly Connected Static Route
 
-#### OR 
+##### OR 
 ```
 ip route 192.168.20.0 255.255.255.0 (remote network) Gi0/0/1 (outgoing interface) 212.12.12.2 (next-hop address)
 ```
 > Fully Specified Static Route
+
+##### Default Route
+```
+ip route 0.0.0.0 0.0.0.0 Gi0/0/1 (default route) 
+```
+### CHECK 
+```
+show ip route
+```
 
 # R2
 ### Initial Settings
@@ -62,8 +71,17 @@ ip route 192.168.10.0 255.255.255.0 (remote network) Gi0/0/1 (outgoing interface
 ```
 > Directly Connected Static Route
 
-#### OR 
+##### OR 
 ```
 ip route 192.168.10.0 255.255.255.0 (remote network) Gi0/0/1 (outgoing interface) 212.12.12.1 (next-hop address)
 ```
 > Fully Specified Static Route
+
+##### Default Route
+```
+ip route 0.0.0.0 0.0.0.0 Gi0/0/1 (default route) 
+```
+### CHECK 
+```
+show ip route
+```
