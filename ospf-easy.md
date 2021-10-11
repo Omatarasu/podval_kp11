@@ -26,7 +26,14 @@ network 192.168.10.0 0.0.0.255 area 0 (announcing LAN)
 ip ospf hello-interval 5 (same on all routers)
 ip ospf dead-interval 20 (saame on all routers)
 ```
-
+### CHECK 
+```
+show ip protocols
+show ip ospf 
+show ip ospf neighbor
+show ip ospf interface [Gi0/0/0]
+show ip ospf interface brief
+```
 # R2
 ### Initial Settings
 ```
@@ -55,4 +62,12 @@ network 212.12.12.0 0.0.0.3 area 0 (announcing WAN)
 network 192.168.20.0 0.0.0.255 area 0(announcing LAN)
 ip ospf hello-interval 5 (same on all routers)
 ip ospf dead-interval 20 (saame on all routers)
+```
+### CHECK 
+```
+show ip protocols
+show ip ospf 
+show ip ospf neighbor
+show ip ospf interface [Gi0/0/0]
+show ip ospf interface brief
 ```
