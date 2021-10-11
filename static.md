@@ -54,7 +54,7 @@ description WAN
 ```
 ip route 192.168.10.0 255.255.255.0 (remote network) 212.12.12.1 (next-hop address)
 ```
-> next-hop static route 
+> Next-Hop Static Route 
 
 ##### OR
 ``` 
